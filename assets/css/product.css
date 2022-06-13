@@ -38,3 +38,33 @@
 .btn_options button{
     width: 31.33%;
 }
+
+@media screen and (min-width:768px){
+    .main_banner_section .row{
+       display: block;
+    }
+    .product_details_col .row{
+        display: flex;
+    }
+    .product_img{
+        height: 20rem;
+    }
+    .product_details_col{
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .main_banner_section .row{
+        display: flex;
+     }
+}
+@media screen and (min-width:1280px){
+    .main_banner_section .row{
+        display: flex;
+     }
+}
+@media screen and (min-width:1440px){
+    .main_banner_section .row{
+        display: flex !important;
+     }
+}
