@@ -1,0 +1,36 @@
+.main_banner_section{
+    padding: 3rem;
+}
+.product_img{
+    height: 15rem;
+}
+.product_img img{
+    height: 15rem;
+}
+.quantity_info .quantity{
+    display: flex;
+    align-items: center;
+    margin: 0 6rem 0 0;
+}
+.quantity_info .counter{
+   margin: 0;
+}
+.product_info{
+    color: var(--color-grey);
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+.product_info_primary{
+    font-size: 0.8rem;
+    color: var(--color-grey);
+}
+.quantity_info,.specifications,.price,.company,.review,.company_name{
+    padding: 1rem 0;
+}
+.store_points{
+    margin: 0 6rem 0 0;
+}
+.btn_options button{
+    width: 32.33%;
+}

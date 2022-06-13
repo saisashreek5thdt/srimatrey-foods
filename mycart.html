@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <!--BOOTSTRAP CSS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="assets/css/style.css" />
+     <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container-fluid g-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <div class="navbar_items">
+                         <div class="row d-flex justify-content-between" style="flex-wrap:nowrap;">
+                            <a class="navbar-brand" href="#">logo</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Delivery to &nbsp;&nbsp;<i class="fa-solid fa-location-dot" style="color: var(--color-grey);"></i>&nbsp; india,hyd</a>
+                              </li>
+                              <li class="nav-item" style="width:40%;">
+                                <form class="d-flex justify-content-end">
+                                    <input class="form-control me-2 search_bar" type="search" placeholder="What are you looking for ?" aria-label="Search">
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass" style="position:absolute; padding:10px 0px; margin-left: -40px; color: var(--color-grey);"></i></a>
+                                  </form>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="like_icon">
+                                        <i class="fa-regular fa-heart" style="font-size: 20px;"></i>
+                                    </div>
+                                </a>
+                              </li>
+            
+                              <li class="nav-item">
+                                <a class="nav-link" href="mycart.html" tabindex="-1" aria-disabled="true">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    My Cart
+                                </a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                    Profile
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">My Accounts</a></li>
+                                  <li><a class="dropdown-item" href="#">My Orders</a></li>
+                                  <li><a class="dropdown-item" href="#">My Wish List</a></li>
+                                </ul>
+                              </li>
+                              </ul>
+                         </div>
+                        </div>
+                        <div class="navbar_items">
+                        <div class="row">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 d-flex justify-content-start">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-border-all"></i> &nbsp; &nbsp;All Categories
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Snacks & Beverages</a></li>
+                                    <li><a class="dropdown-item" href="#">Packaged Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">New Products</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Best Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Promotions</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Offers</a>
+                                </li>
+                              </ul>
+                        </div>
+                        <button type="button" class="shop_now_btn2"><i class="fa-solid fa-gift"></i>  Festival Gift overs</button>
+                        </div>
+                  </div>
+            </div>
+          </nav>
+          <main>
+              <section class="payment_section">
+                  <div class="row">
+                      <div class="order_info d-flex">
+                          <div class="payment_info">
+                              <h5 class="secondary_info">
+                                  Payment Information
+                              </h5>
+                              <div class="payment_details">
+                                <h4 class="tertiary_heading">Personal Details</h4>
+                                <div class="d-flex info_row">
+                                    <div class="person">
+                                        <i class="fa-solid fa-user-large"></i>
+                                        <p class="tertiary_info">Person</p>
+                                    </div>
+                                    <div class="_company">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p class="tertiary_info">Company</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex info_row">
+                                    <div class="inputbox">
+                                        <label for="f_name">Full Name</label>
+                                        <input type="text" name="f_name" placeholder="Mark Damon">
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                    </div>
+                                </div>
+                                <form action="">
+                                <div class="d-flex info_row">
+                                    <div class="inputbox">
+                                        <label for="country1">Country</label>
+                                        <input list="countries" type="country" name="country1" placeholder="India">
+                                        <datalist id="countries">
+                                            <option value="Azganisthan">
+                                            <option value="Algeria">
+                                            <option value="India">
+                                            <option value="UK">
+                                            <option value="US">
+                                          </datalist> 
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="city">City</label>
+                                        <input list="city" type="text" name="city" placeholder="Hyderabad">
+                                        <datalist id="city">
+                                          <option value="Hyderabad">
+                                          <option value="Warangal">
+                                          <option value="Khammam">
+                                          <option value="Nizamabad">
+                                          <option value="Nalgonda">
+                                        </datalist> 
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="postal_code">Postal Code</label>
+                                        <input type="number" name="postal_code" placeholder="500023">
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" placeholder="2-83, Sbh Colony">
+                                    </div>
+                                </div>
+                            </form>
+                                <div class="cards_section">
+                                    <h4 class="tertiary_heading">You Saved Cards</h4>
+                                    <div class="saved_cards d-flex">
+                                        <div class="payment_card">
+                                            <img src="assets/images/mycart/credit.png" alt="">
+                                        </div>
+                                        <div class="payment_card">
+                                            <img src="assets/images/mycart/card_2.png" alt="">
+                                        </div>
+                                        <div class="payment_card">
+                                            <div class="add_card">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Modal box-->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Card Details</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <form action="">
+                                            <div class="d-flex info_row">
+                                                <div class="inputbox">
+                                                    <label for="f_name">Card Holder</label>
+                                                    <input type="text" name="f_name" placeholder="Mark Damon">
+                                                </div>
+                                                <div class="inputbox">
+                                                    <label for="card_no">Card No</label>
+                                                    <input type="number" name="card_no" placeholder="0000-0000-0000">
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="d-flex info_row">
+                                                <div class="inputbox">
+                                                    <label for="date">Date</label>
+                                                    <input type="date" name="date" placeholder="--/--">
+                                                </div>
+                                                <div class="inputbox">
+                                                    <label for="cvv">CVV</label>
+                                                    <input type="tel" id="cvv" name="cvv" placeholder="000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                                </div>
+                                            </div>
+                                           <div class="add_btn" style="margin-top: 1.5rem; text-align:center;">
+                                            <button type="button" class="shop_now_btn2">ADD CARD</button>
+                                           </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              </div>
+                          </div>
+                          <div class="order_summary">
+                            <h5 class="secondary_info">
+                                Order Summary
+                            </h5>
+                            <div class="items">
+                                <div class="item d-flex justify-content-between">
+                                    <div class="item_row d-flex">
+                                        <img src=" " alt="img1">
+                                        <div class="item_info">
+                                            <h4 class="tertiary_heading">
+                                                Payment Information
+                                            </h4> 
+                                            <h4 class="tertiary_heading">
+                                                &#8377; 20.95 / KG
+                                            </h4>
+                                            <div class="counter">
+                                                <div class="btn1">-</div>
+                                                <div class="count"><span> 2 KG</span></div>
+                                                <div class="btn1">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more_icon">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="item d-flex justify-content-between">
+                                    <div class="item_row d-flex">
+                                        <img src=" " alt="img2">
+                                        <div class="item_info">
+                                            <h4 class="tertiary_heading">
+                                                Payment Information
+                                            </h4> 
+                                            <h4 class="tertiary_heading">
+                                                &#8377; 20.95 / KG
+                                            </h4>
+                                            <div class="counter">
+                                                <div class="btn1">-</div>
+                                                <div class="count"><span> 2 KG</span></div>
+                                                <div class="btn1">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more_icon">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="item_price_info">
+                                    <div class="order_summary_info d-flex justify-content-between">
+                                        <p class="tertiary_info">
+                                            Order Summary
+                                        </p>
+                                        <h4 class="tertiary_heading">
+                                            ₹ 20.95
+                                        </h4>
+                                    </div>
+                                    <div class="gst_info  d-flex justify-content-between">
+                                        <p class="tertiary_info">
+                                           GST
+                                        </p>
+                                        <h4 class="tertiary_heading">
+                                            ₹ 2.25
+                                        </h4>
+                                    </div>
+                                    <div class="total_price  d-flex justify-content-between">
+                                        <h4 class="tertiary_heading">
+                                            Total Amount
+                                        </h4> 
+                                        <h4 class="tertiary_heading">
+                                            ₹ 23.15
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="shipping_details_section">
+                        <h5 class="secondary_info">
+                            Shipping Details
+                        </h5>
+                        <div class="shipping_details">
+                            <h4 class="tertiary_heading">
+                                Shipping Address
+                            </h4>
+                            <div class="shipping_address">
+                                <div class="address_type">
+                                    <h4 class="tertiary_heading">
+                                        Same as Personal
+                                    </h4> 
+                                    <p class="tertiary_info">
+                                        Hyd, India<br />2-23 SBH Colony
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                  </div>
+              </section>
+          </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+</html>

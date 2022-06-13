@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+     <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid g-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <div class="navbar_items">
+                         <div class="row d-flex justify-content-between" style="flex-wrap:nowrap;">
+                            <a class="navbar-brand" href="#">logo</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Delivery to &nbsp;&nbsp;<i class="fa-solid fa-location-dot" style="color: var(--color-grey);"></i>&nbsp; India,Hyd</a>
+                              </li>
+                              <li class="nav-item" style="width:40%;">
+                                <form class="d-flex justify-content-end">
+                                    <input class="form-control me-2 search_bar" type="search" placeholder="What are you looking for ?" aria-label="Search">
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass" style="position:absolute; padding:10px 0px; margin-left: -40px; color: var(--color-grey);"></i></a>
+                                  </form>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="like_icon">
+                                        <i class="fa-regular fa-heart" style="font-size: 20px;"></i>
+                                    </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="mycart.html" tabindex="-1" aria-disabled="true">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    My Cart
+                                </a>
+                              </li>
+                             
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                    Profile
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">My Accounts</a></li>
+                                  <li><a class="dropdown-item" href="#">My Orders</a></li>
+                                  <li><a class="dropdown-item" href="#">My Wish List</a></li>
+                                </ul>
+                              </li>
+                              </ul>
+                         </div>
+                        </div>
+                        <div class="navbar_items">
+                        <div class="row">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 d-flex justify-content-start">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-border-all"></i> &nbsp; &nbsp;All Categories
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Snacks & Beverages</a></li>
+                                    <li><a class="dropdown-item" href="#">Packaged Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">New Products</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Best Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Promotions</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Offers</a>
+                                </li>
+                              </ul>
+                        </div>
+                        <button type="button" class="shop_now_btn2"><i class="fa-solid fa-gift"></i>  Festival Gift overs</button>
+                        </div>
+                  </div>
+            </div>
+          </nav>
+
+        <header class="header_section">
+            <div class="row">
+                <div class="col-4">
+                    <div class="banner_text">
+                    <span class="main_heading">Fresh 100% organic fruits</span>
+                    <h2 class="primary_heading">Discover new amazing grocery deals</h2>
+                    <p class="primary_info">The most healthy organic is safe for health</p>
+                    <button type="button" class="shop_now_btn1">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="main_banner">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="..." class="d-block" alt="image1">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="5000">
+                                <img src="..." class="d-block" alt="image2">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="5000">
+                                <img src="..." class="d-block" alt="image3">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_offers">
+            <div class="row">
+                <div class="col">
+                    <div class="header_offers_card">
+                        <div class="card light_cream">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h3 class="secondary_heading">30% OFF</h3>
+                                        <p class="secondary_info">PURE FRUITS</p>
+                                        <button type="button" class="shop_now_btn2">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card_image">
+                                    <img src="..." class="card-img-top" alt="...">
+                                     </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="header_offers_card">
+                        <div class="card light_grey">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h3 class="secondary_heading">30% OFF</h3>
+                                        <p class="secondary_info">PURE FRUITS</p>
+                                        <button type="button" class="shop_now_btn1">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card_image">
+                                        <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="header_offers_card">
+                        <div class="card light_blue">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h3 class="secondary_heading">30% OFF</h3>
+                                        <p class="secondary_info">PURE FRUITS</p>
+                                        <button type="button" class="shop_now_btn3">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card_image">
+                                        <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        </header>
+        <main>
+            <section class="categories_section">
+                <div class="categories_row">
+                    <h2 class="primary_heading">Browse our hottest categories</h2>
+                    <a href="#"><span class="btn_shop_now">Shop Now</span></a>
+                </div>
+              <div class="row">
+                  <div class="col">
+                    <div class="card green_color">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-body">
+                                    <h4 class="tertiary_heading">New Arrivals</h4>
+                                    <p class="tertiary_info">Fresh Vegetables</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div> -->
+                        </div> 
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card yellow_light">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-body">
+                                    <h4 class="tertiary_heading">New Arrivals</h4>
+                                    <p class="tertiary_info">Fresh Vegetables</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div> -->
+                        </div> 
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card violet_light">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-body">
+                                    <h4 class="tertiary_heading">New Arrivals</h4>
+                                    <p class="tertiary_info">Fresh Vegetables</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div> -->
+                        </div> 
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card navy_blue_light">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-body">
+                                    <h4 class="tertiary_heading">New Arrivals</h4>
+                                    <p class="tertiary_info">Fresh Vegetables</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div> -->
+                        </div> 
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <section class="top_products_section">
+                <div class="top_products_row">
+                <h2 class="primary_heading">Top Products</h2>
+                <div class="slide_buttons">
+                    <div class="left_arrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <div class="right_arrow">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+                </div>
+                <div class="product_details">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="offer">
+                                <span>25% OFF</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="new">
+                                <span>NEW</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="offer">
+                                <span>25% OFF</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="new">
+                                <span>NEW</span>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="people_viewed_section">
+                <div class="top_products_row">
+                    <h2 class="primary_heading">People Also Viewed</h2>
+                    <div class="slide_buttons">
+                        <div class="left_arrow">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="right_arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    </div>
+                <div class="product_details">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="offer">
+                                <span>25% OFF</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="new">
+                                <span>NEW</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hot_offers_section">
+                <h2 class="primary_heading">Hot Offers</h2>
+                <div class="product_details2">
+                <div class="row">
+                    <div class="col">
+                        <div class="card radial_gradient_blue">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h4 class="quaternary_heading">UP TO</h4>
+                                        <p class="quaternary_info">50% OFF</p>
+                                        <h4 class="quaternary_heading">ON YOUR DAILY NEEDS</h4>
+                                        <button type="button" class="shop_now_btn3">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="..." class="card-img-top" alt="...">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card radial_gradient_orange">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h4 class="quaternary_heading">UP TO</h4>
+                                        <p class="quaternary_info">50% OFF</p>
+                                        <h4 class="quaternary_heading">ON YOUR DAILY NEEDS</h4>
+                                        <button type="button" class="shop_now_btn3">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="..." class="card-img-top" alt="...">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card radial_gradient_orange">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h4 class="quaternary_heading">UP TO</h4>
+                                        <p class="quaternary_info">50% OFF</p>
+                                        <h4 class="quaternary_heading">ON YOUR DAILY NEEDS</h4>
+                                        <button type="button" class="shop_now_btn3">Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="..." class="card-img-top" alt="...">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="related_products">
+                    <div class="row p-2">
+                        <div class="col p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-1">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col  p-2">
+                            <div class="card light_blue2">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rice, Pastha & pulses</h5>
+                                 </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="other_products_section">
+                <div class="top_products_row">
+                    <h2 class="primary_heading">Also You Can See</h2>
+                    <div class="slide_buttons">
+                        <div class="left_arrow">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="right_arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    </div>
+                <div class="product_details">
+                <div class="row">
+                    <div class="col">
+                        <a href="product.html">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="product.html">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="offer">
+                                <span>25% OFF</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+                    <div class="col">
+                        <a href="product.html">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+                    <div class="col">
+                        <a href="product.html">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+                    <div class="col">
+                        <a href="product.html">
+                        <div class="card">
+                            <div class="card_header">
+                                <div class="new">
+                                <span>NEW</span>
+                                </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            </div>
+                            <div class="card_img">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="tertiary_heading">Vegetables</h4>
+                                <p class="tertiary_info">Stuffing Black Eggplant</p>
+                                <p class="price_info">&#8377 20.95 / KG</p>
+                                <div class="counter">
+                                    <div class="btn1">-</div>
+                                    <div class="count"><span> 2 KG</span></div>
+                                    <div class="btn1">+</div>
+                                </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                
+                    </div>
+                </div>
+                <div class="other_related_products">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_offers_card">
+                                <div class="card light_blue2">
+                                    <div class="card-body">
+                                         <p class="tertiary_info">Fresh Vegetables</p>
+                                    </div>
+                                    <div class="card_image">
+                                         <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col">
+                            <div class="header_offers_card">
+                                <div class="card light_blue2">
+                                    <div class="card-body">
+                                         <p class="tertiary_info">Fresh Vegetables</p>
+                                    </div>
+                                    <div class="card_image">
+                                         <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col">
+                            <div class="header_offers_card">
+                                <div class="card light_blue2">
+                                    <div class="card-body">
+                                         <p class="tertiary_info">Fresh Vegetables</p>
+                                    </div>
+                                    <div class="card_image">
+                                         <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col">
+                            <div class="header_offers_card">
+                                <div class="card light_blue2">
+                                    <div class="card-body">
+                                         <p class="tertiary_info">Fresh Vegetables</p>
+                                    </div>
+                                    <div class="card_image">
+                                         <img src="..." class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="row">
+                <div class="footer_img">
+                    <div class="row">
+                        <div class="col">
+                            <div class="selling_online">
+                                <p class="secondary_info">Start selling online for free</p>
+                                <h4 class="tertiary_heading">We will help you make the most of your restaurant online.</h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mail_box">
+                                <input type="text" placeholder="Enter Your Email">
+                                <button type="button" class="shop_now_btn2">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="row">
+                        <div class="col">
+                            <p class="tertiary_info">LOGO</p>
+                            <h4 class="tertiary_heading">It is a long established fact that a reader will be distracted by the readable content.</h4>
+                            <div class="social_icons d-flex">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="tertiary_info">Customer service</p>
+                            <a href="#"><h4 class="tertiary_heading">Service & Warranty</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Return & Exchange</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Secure Online Payments</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Cash on Delivery</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Shipping & Delivery</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Valet Trolley & Home Delivery</h4></a>
+                        </div>
+                        <div class="col">
+                            <p class="tertiary_info">Customer service</p>
+                            <a href="#"><h4 class="tertiary_heading">Plural brands</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Newsletter</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">News & Press Releases</h4></a>
+                        </div>
+                        <div class="col">
+                            <p class="tertiary_info">Helping you save</p>
+                            <a href="#"><h4 class="tertiary_heading">Extended Warranty Retail</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Gift Card</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">What is MYCLUB?</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">MYCLUB Offers</h4></a>
+                            <a href="#"><h4 class="tertiary_heading">Carnival Offers</h4></a>
+                        </div>
+                    </div>
+                    <div class="copyright_paycards_row">
+                        <div class="copyright">
+                            <h4 class="tertiary_heading">Copyright &#169;
+                                <span style="color:#6BCB77 ;">Plural Grocery</span> . All Rights Reserved</h4>
+                        </div>
+                        <div class="pay_cards">
+                            <div class="pay_card">
+                                <img src="assets/images/home_page_images/visa.png" alt="visa">
+                            </div>
+                            <div class="pay_card">
+                                <img src="assets/images/home_page_images/master.png" alt="master" style="height:23px ;">
+                            </div>
+                            <div class="pay_card">
+                                <img src="assets/images/home_page_images/pngkey.com-rupay-card-png-3653503.png" alt="rupay" style="height:12px ;">
+                            </div>
+                            <div class="pay_card">
+                                <img src="assets/images/home_page_images/maestro.png" alt="maestro">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- BOOTSTRAP JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+</html>

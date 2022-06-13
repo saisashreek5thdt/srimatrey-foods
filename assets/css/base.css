@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --color-white :#FFFFFF;
+    --color-black :#000000;
+
+    --color-green-light :#34BE82;
+    --color-green-light1:#6cdb90;
+
+    --color-navy_blue :#354259;
+    --color-navy_blue_light :#4d5c75;
+    --color-navy-blue-dark:#243A73;
+    --color-navy-blue-dark1:#203f9c;
+
+    --color-blue :#34B3F1;
+    --color-blue-light :#DAEAF1;
+    --color-blue-light1 :#EFFFFD;
+    --color-blue-light2 :#f4f6ff;
+    --color-blue-light3 :#dbedf8;
+
+    --color-red :#FF0000;
+
+    --color-yellow :#DBA800;
+    --color-yellow-light :#FFCE45;
+
+    --color-grey :#808080;
+    --color-grey-light :#DCDCDC;
+    --color-grey-light1 :#F7F7F7;
+    --color-grey-light2:#7c8892;
+    --color-grey-light3:#f2f1f1;
+
+    --color-cream-light :#FBF8F1;
+
+    --color-violet-light :#4A47A3;
+    --color-violet-light1 : #083e71;
+    --color-violet-dark :#053058;
+    --color-violet :#394398;
+
+    --color-orange-dark :#f5821f;
+    --color-orange-light :#f7a55f;
+}

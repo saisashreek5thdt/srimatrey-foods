@@ -1,0 +1,10 @@
+/*BASE CSS*/
+@import url(base.css);
+/*COMPONENT CSS*/
+@import url(component.css);
+/*LAYOUT CSS*/
+@import url(layout.css);
+/*MYCART CSS*/
+@import url(mycart.css);
+/*PRODUCT CSS*/
+@import url(product.css);

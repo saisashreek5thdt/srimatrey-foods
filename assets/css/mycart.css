@@ -1,0 +1,136 @@
+.payment_info{
+    width: 55%;
+}
+.order_summary{
+    width: 40%;
+    margin-left: 5%;
+}
+.payment_section{
+    padding: 3rem;
+}
+.payment_details .person,.payment_details ._company{
+    width: 8.5rem;
+    height: 2.1rem;
+    font-size: 14px;
+    margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--color-grey);
+}
+.person i,._company i{
+    margin-right: 10px;
+}
+.payment_details input,
+.payment_details input::placeholder{
+ font-size: 0.8rem;
+ padding: 15px 8px;
+ vertical-align: middle;
+}
+
+.payment_details .tertiary_info{
+ margin: 0;
+}
+.payment_section .inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.payment_section input{
+    width: 8.5rem;
+    height: 2.1rem;
+    margin: 0.5rem 0 0 0;
+    padding: 15px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--color-grey);
+}
+.payment_details ,.shipping_details{
+    padding: 1.5rem;
+    box-shadow: 0 0 2px var(--color-grey);
+}
+.payment_details .tertiary_info{
+    font-size: 0.8rem;
+    color: var(--color-grey);
+}
+.payment_details label{
+    font-size: 0.8rem;
+}
+.info_row{
+    margin: 0.8rem 0 0 0;
+}
+.cards_section{
+    margin-top: 2rem;
+}
+.saved_cards img{
+    height: 6rem;
+}
+.payment_card{
+    margin-right: 1rem;
+}
+.payment_card .add_card{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-blue-light3);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.payment_card .add_card i{
+    color: var(--color-blue);
+}
+.items{
+    padding: 1.5rem;
+    box-shadow: 0 0 2px var(--color-grey);   
+}
+.item{
+    margin-top: 1rem;
+}
+.item img{
+    height: 6rem;
+    width: 4.5rem;
+}
+.items .counter{
+    margin: 0;
+}
+.items .tertiary_info{
+    font-size: 0.8rem;
+    color: var(--color-grey);
+}
+.item_price_info{
+    margin-top: 2rem;
+}
+.more_icon i{
+    height: 25px;
+    width: 25px;
+    color: var(--color-grey);
+    box-shadow: 0 0 2px var(--color-grey-light2);   
+    padding: 7px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.shipping_details_section{
+  margin-top: 2rem;
+}
+.shipping_details{
+    width: 55%;
+}
+.shipping_details .tertiary_info{
+    font-size: 0.8rem;
+    color: var(--color-grey);
+    margin: 0;
+}
+.shipping_address{
+    width: fit-content;
+    padding: 1rem 3rem 1rem 1rem;
+    box-shadow: 0 0 2px var(--color-grey-light2);  
+    border-radius: 8px; 
+    margin-top: 1rem;
+
+}
