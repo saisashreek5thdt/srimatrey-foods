@@ -1,4 +1,7 @@
 
+html{
+overflow-x: hidden;
+}
 .navbar{
     box-shadow:0 0 8px var(--color-grey) ;
     padding: 2rem 3rem;
@@ -359,4 +362,176 @@ cursor: pointer;
 .pay_card img{
     height: 1.8rem;
 }
-
+@media screen and (min-width:425px){
+    /* .top_products_section .card, 
+    .people_viewed_section .card, 
+    .other_products_section .card{
+       
+    } */
+    .categories_section .card{
+        height: 9rem;
+    }
+    .card_header .offer,
+    .card_header .new{
+        width: 3.5rem;
+        margin: 10px;
+    }
+    .card_header .offer span,
+    .card_header .new span{
+        font-size: 9px;
+    }
+    .icon{
+        padding: 10px;
+        align-items: center;
+    }
+    .icon i{
+       font-size: 1rem;
+    }
+    .product_details,
+    .related_products{
+       width: 100%;
+    }
+    .product_details .tertiary_heading{
+        font-size: 10px;
+    }
+    .product_details .tertiary_info{
+        font-size: 15px;
+    }
+    .related_products img {
+        height: 6rem;
+    }
+    .price_info{
+        font-size: 15px;
+    }
+    .quaternary_heading {
+        font-size: 13px;
+    }
+    .tertiary_info{
+        font-size: 1rem;
+    }
+    .quaternary_info{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .quaternary_heading{
+        font-size: 15px;
+    }
+    .hot_offers_section button{
+        margin: 10px 0;
+    }
+    .product_details .row, 
+    .product_details2 .row{
+        flex-wrap: nowrap;
+    }
+    .card_header .new{
+        margin-top: 0.5rem;
+    }
+    .footer .selling_online {
+        padding: 2rem 0;
+    }
+    .footer .mail_box{
+        padding: 2rem;
+        height: auto;
+    }
+    .footer .mail_box input{
+        width: 13rem;
+    }
+    .footer .mail_box input{
+        font-size: 13px;
+        padding: 8px 9px;
+    }
+    .footer_content{
+        padding: 1rem 3.2rem;
+    }
+    .footer_content .tertiary_info{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .copyright_paycards_row{
+        display: block;
+    }
+    .copyright_paycards_row .copyright, .copyright_paycards_row .pay_cards{
+        padding: 1rem 0;
+    }
+}
+@media screen and (min-width:1024px){
+    .shop_now_btn1, .shop_now_btn2, .shop_now_btn3{
+        font-size: 12px;
+    }
+    .product_details{
+        width: 130%;
+    }
+    .card_header .offer, .card_header .new {
+        padding: 3px;
+        margin: 1rem;
+        border-radius: 14px;
+        width: 4rem;
+        height: 1.5rem;
+        font-size: 11px;
+    }
+    .product_details .tertiary_info{
+        font-size: 1.1rem;
+    }
+    .product_details .price_info{
+        font-size: 19px;
+    }
+    .product_details, .related_products{
+        width: 120%;
+    }
+    .product_details .card{
+        padding: 1rem;
+    }
+    .related_products{
+        width: 150%;
+    }
+    .other_related_products .card{
+        display: flex;
+    }
+    .footer .mail_box input {
+        width: 14rem ;
+    }
+}
+@media screen and (min-width:1280px){
+    .product_details{
+        width: 130%;
+    }
+    .card_header .offer, .card_header .new {
+        padding: 3px;
+        margin: 1rem;
+        border-radius: 14px;
+        width: 4rem;
+        height: 1.5rem;
+        font-size: 11px;
+    }
+    .product_details .tertiary_info{
+        font-size: 1.1rem;
+    }
+    .product_details .price_info{
+        font-size: 19px;
+    }
+    .other_related_products .card{
+        display: flex;
+    }
+}
+@media screen and (min-width:1440px){
+    .product_details{
+        width: 130%;
+    }
+    .card_header .offer, .card_header .new {
+        padding: 3px;
+        margin: 1rem;
+        border-radius: 14px;
+        width: 4rem;
+        height: 1.5rem;
+        font-size: 11px;
+    }
+    .product_details .tertiary_info{
+        font-size: 1.1rem;
+    }
+    .product_details .price_info{
+        font-size: 19px;
+    }
+    .other_related_products .card{
+        display: flex;
+    }
+}
