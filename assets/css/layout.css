@@ -73,6 +73,7 @@ nav {
 
 #logo {
     width: max-content;
+    height: max-content;
 	display: block;
 	padding: 0 20px;
 	float: left;
@@ -175,154 +176,7 @@ nav .shop_now_btn2{
     float: right;
     margin-top: -3.5rem;
 }
-/* Media Queries
---------------------------------------------- */
- @media all and (min-width : 1440px){
-    nav a{
-        padding: 14px 40px !important; 
-    }
-    nav .menu{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    form .search_bar{
-        width: 25rem !important;
-    }
-}
-/*
-@media all and (min-width : 1024px){
-    #logo{
-        padding: 0;
-    }
-    nav a{
-        padding: 14px 14px;
-    }
-    form .search_bar{
-        width: 17rem ;
-    }
-} */
-@media all and (max-width : 768px) {
 
-	#logo {
-		display: block;
-		padding: 0;
-		width: max-content;
-		text-align: center;
-		float: none;
-	}
-
-	nav {
-		margin: 0;
-	}
-    nav .row{
-        justify-content: space-between;
-    }
-    nav .shop_now_btn2 {
-        /* float: right; */
-        margin-top: 1.5rem;
-        margin-left: -10px;
-        float: left;
-    }
-
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
-	.toggle + a,.menu{
-		display: none;
-	}
-
-	/* Stylinf the toggle lable */
-	.toggle {
-		display: block;
-        width: max-content;
-        height: max-content;
-		background-color: var(--color-white);
-		padding:10px;	
-		color:var(--color-black);
-		font-size:17px;
-		text-decoration:none;
-		border:none;
-	}
-
-	.toggle:hover {
-		background-color: var(--color-white);
-	}
-
-	/* Display Dropdown when clicked on Parent Lable */
-	[id^=drop]:checked + ul {
-		display: block;
-	}
-  
-	/* Change menu item's width to 100% */
-	nav ul li {
-		display: block;
-		width: 100%;
-		}
-
-	nav ul ul .toggle,
-	nav ul ul a {
-		padding: 0 40px;
-	}
-
-	nav ul ul ul a {
-		padding: 0 80px;
-	}
-
-	nav a:hover,
- 	nav ul ul ul a {
-        box-shadow:0 0 8px var(--color-grey) ;
-	}
-  
-	nav ul li ul li .toggle,
-	nav ul ul a,
-  nav ul ul ul a{
-		padding:14px 20px;	
-		color:var(--color-black);
-		font-size:17px; 
-	}
-  
-  
-	nav ul li ul li .toggle,
-	nav ul ul {
-        box-shadow:0 0 8px var(--color-grey) ;
-	}
-
-	/* Hide Dropdowns by Default */
-	nav ul ul {
-		float: none;
-		position:static;
-		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
-	}
-		
-	/* Hide menus on hover */
-	nav ul ul li:hover > ul,
-	nav ul li:hover > ul {
-		display: none;
-	}
-		
-	/* Fisrt Tier Dropdown */
-	nav ul ul li {
-		display: block;
-		width: 100%;
-	}
-
-	nav ul ul ul li {
-		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
-
-	}
-
-}
-
-@media all and (max-width : 330px) {
-
-	nav ul li {
-		display:block;
-		width: 94%;
-	}
-
-}
 .navbar{
     box-shadow:0 0 8px var(--color-grey) ;
     padding: 2rem 3rem;
@@ -686,12 +540,25 @@ cursor: pointer;
 .pay_card img{
     height: 1.8rem;
 }
+
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
 @media screen and (min-width:425px){
     /* .top_products_section .card, 
     .people_viewed_section .card, 
     .other_products_section .card{
        
     } */
+    .gift_btn {
+        margin-left: 6.5rem;
+    }
     .categories_section .card{
         height: 9rem;
     }
@@ -778,7 +645,162 @@ cursor: pointer;
         padding: 1rem 0;
     }
 }
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: max-content;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+    nav .row{
+        justify-content: space-between;
+    }
+    nav .shop_now_btn2 {
+        /* float: right; */
+        margin-top: 1.5rem;
+        margin-left: -10px;
+        float: left;
+    }
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,.menu{
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+        width: auto;
+        height: max-content;
+		background-color: var(--color-white);
+		padding:10px;	
+		color:var(--color-black);
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: var(--color-white);
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	
+    [id^=drop]:checked + ul{
+		display: block;
+	}
+   
+    /* [id^=drop]:checked + .menu {
+		display: block;
+	} */
+    /* [id^=drop]:checked + .menu_2 {
+		display: none;
+	} */
+  
+	/* Change menu item's width to 100% */
+    nav a{
+        padding: 14px 0px;
+    }
+	nav ul li {
+		display: block;
+        text-align: center;
+		width: 100%;
+		}
+        nav form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+        box-shadow:0 0 3px var(--color-grey) ;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:var(--color-black);
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul {
+      border: 1px solid var(--color-grey);
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+    .search_bar{
+        width: 18rem ;
+    }
+    form i{
+        margin-left: -40px;
+        margin-top: 0.1rem;
+    }
+    /* .gift_btn{
+        margin-left: 17.5rem ;
+    } */
+
+}
 @media screen and (min-width:1024px){
+    nav .menu{
+        display: contents;
+    }
+    nav a{
+        padding: 14px 24px !important;
+    }
+    .search_bar{
+        width: 17rem;
+    }
+    form i{
+        margin-left: 212px;
+        margin-top: -2.9rem;
+    }
+    .gift_btn{
+        margin-top: 4rem;
+        margin-left: 9rem;
+    }
     .shop_now_btn1, .shop_now_btn2, .shop_now_btn3{
         font-size: 12px;
     }
@@ -822,9 +844,34 @@ cursor: pointer;
     }
 }
 @media screen and (min-width:1280px){
+    nav .row{
+        flex-wrap: nowrap;
+    }
+    nav .logo{
+        height: max-content;
+    }
+    nav .menu{
+        width: 100%;
+       flex-wrap: wrap;
+       display: flex;
+    }
+    nav a{
+        padding: 14px 35px;
+    }
     nav form i{
-        padding: 7px 0px !important;
-        margin-left: -64px !important;
+        margin-top: -3.1rem !important;
+        margin-left: 450px !important;
+        padding: 10px 110px;
+    }
+    .search_bar{
+        width: 32rem;
+    }
+    nav .nav_row2{
+        margin-left: -1rem;
+    }
+    .gift_btn {
+        margin-top: 4rem;
+        margin-left: 20rem;
     }
     .product_details{
         width: 130%;
@@ -860,9 +907,23 @@ cursor: pointer;
     }
 }
 @media screen and (min-width:1440px){
+    nav a{
+        padding: 14px 40px !important; 
+    }
+    nav .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form .search_bar{
+        width: 25rem !important;
+    }
     nav form i{
-        padding: 7px 0px !important;
-        margin-left: -64px !important;
+        padding: 10px 0px !important;
+        margin-left: 342px !important;
+    }
+    .gift_btn {
+        margin-left: 48rem;
     }
     .product_details{
         width: 130%;

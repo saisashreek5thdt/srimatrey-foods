@@ -15,85 +15,77 @@
 </head>
 <body>
     <div class="container-fluid g-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                         <div class="navbar_items">
-                         <div class="row d-flex justify-content-between" style="flex-wrap:nowrap;">
-                            <a class="navbar-brand" href="index.html">logo</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Delivery to &nbsp;&nbsp;<i class="fa-solid fa-location-dot" style="color: var(--color-grey);"></i>&nbsp; india,hyd</a>
-                              </li>
-                              <li class="nav-item" style="width:40%;">
-                                <form class="d-flex justify-content-end">
-                                    <input class="form-control me-2 search_bar" type="search" placeholder="What are you looking for ?" aria-label="Search">
-                                    <a href="#"><i class="fa-solid fa-magnifying-glass" style="position:absolute; padding:10px 0px; margin-left: -40px; color: var(--color-grey);"></i></a>
-                                  </form>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="like_icon">
-                                        <i class="fa-regular fa-heart" style="font-size: 20px;"></i>
-                                    </div>
-                                </a>
-                              </li>
+        <nav>
+           
+            <div class="row">
+                <div id="logo">Logo</div>
+                <label for="drop" class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="drop" />
+              
+                    <ul class="menu">
+                    <li>
+                            <a href="#">Delivery to &nbsp;&nbsp;
+                                <i class="fa-solid fa-location-dot" style="color: var(--color-grey);"></i>
+                                &nbsp; India,Hyd</a>
+                    </li>
+                    <li>
+                            <form class="form">
+                                <input class="form-control me-2 search_bar" type="search" placeholder="What are you looking for ?">
+                                <a href="#"><i class="fa-solid fa-magnifying-glass" style="position:absolute; padding:10px 0px; margin-left: -40px; color: var(--color-grey);"></i></a>
+                              </form>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="like_icon">
+                                <i class="fa-regular fa-heart" style="font-size: 20px;"></i>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="mycart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            My Cart
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-1" class="toggle">Profile +</label>
+                        <a href="#">Profile</a>
+                        <input type="checkbox" id="drop-1"/>
+                        <ul>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Wish List</a></li>
+                        </ul>
+                    </li>
             
-                              <li class="nav-item">
-                                <a class="nav-link" href="mycart.html" tabindex="-1" aria-disabled="true">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    My Cart
-                                </a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-user"></i>
-                                    Profile
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">My Accounts</a></li>
-                                  <li><a class="dropdown-item" href="#">My Orders</a></li>
-                                  <li><a class="dropdown-item" href="#">My Wish List</a></li>
-                                </ul>
-                              </li>
-                              </ul>
-                         </div>
-                        </div>
-                        <div class="navbar_items">
-                        <div class="row">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 d-flex justify-content-start">
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-border-all"></i> &nbsp; &nbsp;All Categories
-                                  </a>
-                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Snacks & Beverages</a></li>
-                                    <li><a class="dropdown-item" href="#">Packaged Food</a></li>
-                                    <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">New Products</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Best Sales</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Promotions</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Offers</a>
-                                </li>
-                              </ul>
-                        </div>
+                    <li class="nav_row2">
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">Categories +</label>
+                        <a href="#">Categories</a>
+                        <input type="checkbox" id="drop-2"/>
+                        <ul>
+                            <li><a href="#">Snacks & Beverages</a></li>
+                            <li><a href="#">Packaged Food</a></li>
+                            <li><a href="#">Home & Kitchen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Best Sales</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <div class="gift_btn">
                         <button type="button" class="shop_now_btn2"><i class="fa-solid fa-gift"></i>  Festival Gift overs</button>
-                        </div>
-                  </div>
-            </div>
-          </nav>
+                    </div>
+                    </ul>
+                   
+                   </div>
+            </nav>
+
           <main>
               <section class="main_banner_section">
                    <div class="row">
