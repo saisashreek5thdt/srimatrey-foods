@@ -167,7 +167,9 @@ nav ul ul ul li {
 	left:170px; 
 }
 
-	
+	ul li i{
+        color: var(--color-grey);
+    }
 /* Change ' +' in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
@@ -681,7 +683,7 @@ cursor: pointer;
         height: max-content;
 		background-color: var(--color-white);
 		padding:10px;	
-		color:var(--color-black);
+		color:var(--color-grey);
 		font-size:17px;
 		text-decoration:none;
 		border:none;
@@ -689,6 +691,7 @@ cursor: pointer;
 
 	.toggle:hover {
 		background-color: var(--color-white);
+        color: var(--color-black);
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
@@ -727,9 +730,13 @@ cursor: pointer;
 		padding: 0 80px;
 	}
 
-	nav a:hover,
+	nav a:hover{
+        box-shadow:0 0 3px var(--color-grey) ;
+        color: var(--color-black);
+    }
  	nav ul ul ul a {
         box-shadow:0 0 3px var(--color-grey) ;
+        color: var(--color-grey);
 	}
   
 	nav ul li ul li .toggle,
@@ -923,7 +930,8 @@ cursor: pointer;
         margin-left: 342px !important;
     }
     .gift_btn {
-        margin-left: 48rem;
+        margin-left: 70rem;
+        margin-top: 1rem;
     }
     .product_details{
         width: 130%;
