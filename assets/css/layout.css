@@ -48,6 +48,10 @@ nav #container {
 	max-width: 890px;
 }
 
+#logo a{
+    padding: 0 !important;
+}
+
 nav p {
 	text-align: center;
 }

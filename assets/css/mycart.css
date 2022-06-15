@@ -19,7 +19,17 @@
     margin-right: 15px;
     border-radius: 5px;
     box-shadow: 0 0 2px var(--color-grey);
+    cursor: pointer;
 }
+.payment_details .person:hover{
+    box-shadow: 0 0 2px var(--color-blue);
+}
+.payment_details ._company:hover{
+    box-shadow: 0 0 2px var(--color-blue);
+}
+/* .payment_details ._company:hover + ._company i,._company p{
+    
+} */
 .person i,._company i{
     margin-right: 10px;
 }
