@@ -2,6 +2,327 @@
 html{
 overflow-x: hidden;
 }
+/* CSS Document */
+/* body {
+	background: #212121;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	} */
+
+nav h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+
+nav h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+
+nav h3 a {
+	color: #FFF;
+}
+
+nav a {
+	color: #FFF;
+}
+
+nav h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+	}
+
+nav #container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+nav p {
+	text-align: center;
+}
+nav form i{
+    position: absolute;
+    padding: 6px 0px;
+    margin-left: -59px;
+    color: var(--color-grey);
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+    box-shadow:0 0 8px var(--color-grey) ;
+    padding: 2rem 3rem;
+}
+
+#logo {
+    width: max-content;
+	display: block;
+	padding: 0 20px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	padding:0;
+	list-style: none;
+	position: relative;
+    background-color: var(--color-white);
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+    color: var(--color-grey);
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color: var(--color-grey);
+	font-size:17px;
+	text-decoration:none;
+}
+
+.search_bar{
+    border: none;
+    background-color: var(--color-grey-light1);
+    margin-top: 0.7rem;
+    width: 25rem;
+}
+
+
+nav ul li ul li:hover { 
+    color: var(--color-black);
+    background-color: var(--color-white);
+ }
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+nav .shop_now_btn2{
+    float: right;
+    margin-top: -3.5rem;
+}
+/* Media Queries
+--------------------------------------------- */
+ @media all and (min-width : 1440px){
+    nav a{
+        padding: 14px 40px !important; 
+    }
+    nav .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form .search_bar{
+        width: 25rem !important;
+    }
+}
+/*
+@media all and (min-width : 1024px){
+    #logo{
+        padding: 0;
+    }
+    nav a{
+        padding: 14px 14px;
+    }
+    form .search_bar{
+        width: 17rem ;
+    }
+} */
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: max-content;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+    nav .row{
+        justify-content: space-between;
+    }
+    nav .shop_now_btn2 {
+        /* float: right; */
+        margin-top: 1.5rem;
+        margin-left: -10px;
+        float: left;
+    }
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,.menu{
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+        width: max-content;
+        height: max-content;
+		background-color: var(--color-white);
+		padding:10px;	
+		color:var(--color-black);
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: var(--color-white);
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+  
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+        box-shadow:0 0 8px var(--color-grey) ;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:var(--color-black);
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul {
+        box-shadow:0 0 8px var(--color-grey) ;
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
 .navbar{
     box-shadow:0 0 8px var(--color-grey) ;
     padding: 2rem 3rem;
@@ -501,6 +822,10 @@ cursor: pointer;
     }
 }
 @media screen and (min-width:1280px){
+    nav form i{
+        padding: 7px 0px !important;
+        margin-left: -64px !important;
+    }
     .product_details{
         width: 130%;
     }
@@ -535,6 +860,10 @@ cursor: pointer;
     }
 }
 @media screen and (min-width:1440px){
+    nav form i{
+        padding: 7px 0px !important;
+        margin-left: -64px !important;
+    }
     .product_details{
         width: 130%;
     }
