@@ -1,0 +1,88 @@
+.login_form,
+.registration_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 4rem 0;
+}
+
+.login_form{
+    border-right: 1px solid var(--color-grey);
+}
+
+.form_row{
+    width: max-content;
+    padding: 2px 0;
+}
+.form_section .primary_heading{
+    display: flex;
+    align-items: center;
+    /* width: 18rem; */
+}
+
+.form_section .primary_heading:before{
+    /* background-color: var(--color-grey); */
+    content: "";
+    display: block;
+    height: 1px;
+    /* color: var(--color-grey); */
+    /* width:90%; */
+    box-shadow: 0 0 1px var(--color-grey);
+    width: 60px;
+    position: relative;
+    margin: 0 10px;
+    /* top:50%; */
+    /* right:100%; */
+    /* margin:-1px 0 0; */
+}
+
+.form_section .primary_heading:after{
+    /* background-color: var(--color-grey); */
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60px;
+    box-shadow: 0 0 1px var(--color-grey);
+    /* width: 90%; */
+    /* color: var(--color-grey); */
+    position: relative;
+    margin: 0 10px;
+    /* top:50%; */
+    /* left:100%; */
+    /* margin:-1px 0 0; */
+}
+
+.login_form .inputbox,
+.registration_form .inputbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form .inputbox input,
+.registration_form .inputbox input{
+ margin: 8px 0;
+ width: 18rem;
+ outline: none;
+ border: none;
+    /* filter: drop-shadow(0px 1px 1px grey); */
+box-shadow: 0 1px 12px rgb(0 0 0 / 15%);
+height: 2.8rem;
+}
+
+.login_form .inputbox input::placeholder,
+.registration_form .inputbox input::placeholder{
+ padding-left: 15px;
+}
+
+.login_form button,
+.registration_form button{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+@media screen and (min-width:425px) {
+    .login_form {
+        border-bottom: 1px solid var(--color-grey);
+    }
+}

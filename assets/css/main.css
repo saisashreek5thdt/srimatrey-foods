@@ -7,8 +7,15 @@
 /*LAYOUT CSS*/
 @import "layout.css";
 
+/*LOGIN_REGISTRATION CSS*/
+@import "login_registration.css";
+
 /*MYCART CSS*/
 @import "mycart.css";
+
+/*PLACE_ORDER CSS*/
+@import "place_order.css";
+
 
 /*PRODUCT CSS*/
 @import "product.css";

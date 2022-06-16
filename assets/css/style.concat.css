@@ -4,7 +4,11 @@
 @import url(component.css);
 /*LAYOUT CSS*/
 @import url(layout.css);
+/*LOGIN_REGISTRATION CSS*/
+@import url(login_registration.css);
 /*MYCART CSS*/
 @import url(mycart.css);
+/*PLACE_ORDER CSS*/
+@import url(place_order.css);
 /*PRODUCT CSS*/
 @import url(product.css);
